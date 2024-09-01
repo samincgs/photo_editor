@@ -10,9 +10,6 @@ INVERT_DEFAULT = False
 FLIP_OPTIONS = ['None', 'X', 'Y', 'Both']
 EFFECT_OPTIONS = ['None', 'Emboss', 'Find edges', 'Contour', 'Edge Enhance']
 
-
- 
-
 # colors
 WHITE = '#FFF'
 GREY = 'grey'
