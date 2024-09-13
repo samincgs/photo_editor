@@ -1,5 +1,6 @@
 import customtkinter as ctk
-from image_buttons import ImageImport
+from image_widgets import ImageImport, ImageOutput
+from PIL import Image
 
 
 class App(ctk.CTk):
@@ -19,7 +20,11 @@ class App(ctk.CTk):
         self.image_import = ImageImport(self, self.import_image)
         
     def import_image(self, path):
-        print(path)
+        self.image = Image.open(path)
+        self.image_import.grid_forget() # unmap this widget or get rid of it from the screen
+        
+        self.image_output = ImageOutput(self) # show the new widget with image after image has been chosen in files
+        
            
 if __name__ == '__main__':
     app = App()
