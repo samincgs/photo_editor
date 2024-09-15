@@ -11,6 +11,7 @@ FLIP_OPTIONS = ['None', 'X', 'Y', 'Both']
 EFFECT_OPTIONS = ['None', 'Emboss', 'Find edges', 'Contour', 'Edge Enhance']
 
 # colors
+BG = '#242424'
 WHITE = '#FFF'
 GREY = 'grey'
 BLUE = '#1f6aa5'
